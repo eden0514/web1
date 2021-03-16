@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML복습하기</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>HTML이란?</h1>
+        <strong> Markup Language</strong>의 약자로, <u>링크</u>라는 특징을 하고 Markup의 형식을 가진 컴퓨터 프로그래밍 언어(약속)이다.
+        <h1>기본문법TAG</h1>
+        <p>웹 <u>문서</u>를 만들기 위하여 사용하는 기본적인 <strong>웹 언어</strong>의 한 종류이다. 하이퍼텍스트를 작성하기 위해 개발되었다.</p>
+        인터넷 서비스의 하나인<br>월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다.<p> 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.</p>
+        <img src="컴퓨터.jpg" width="100" title="computer" alt="computer">
+        <h1>Tag의 중첩과 리스트</h1>
+        <ol>
+            <li><a href= "리스트.html" target="_blink" title="LIST">리스트</a></li>
+            <li><a href= "테이블.html" target="_blink" title="TABLE">테이블</a></li>
+        </ol>
+        <h1>FORM TAG</h1>
+        웹 양식 , 웹 양식 또는 HTML 양식 A의 웹 페이지 A를 전송되는 데이터를 입력 할 수있는 사용자 수 있도록 서버 처리를. 웹 사용자가 확인란, 라디오 버튼 또는 텍스트 필드를 사용하여 양식을 작성하기 때문에 양식 은 종이 또는 데이터베이스 양식 과 유사 할 수 있습니다 . 예를 들어 양식을 사용하여 배송 또는 신용 카드 데이터 를 입력 하여 제품을 주문하거나 검색 엔진 에서 검색 결과를 검색하는 데 사용할 수 있습니다 .
+        <h2>form 양식 구현해보기</h2>
+        <form action="http://localhost/login.php" target="_blink">
+            <p>아이디 :<input type="text" name="ID" value="ID"></p>
+            <p>비밀번호 :<input type="password" name="PW"></p>
+            <p>TEXTAREA : <textarea>적으시오</textarea></p>
+            <p><input type="submit"></p>
+        </form>
+        <h1>FORM-Dropdown list</h1>
+        <u>선택지</u> 만들기를 해보자.
+        <form action="http://localhost/color.php" target="_blink">
+            <h2>색상</h2>
+            <select name="color">
+                <option value="red">빨간색</option>
+                <option value="black">검은색</option>
+                <option value="blue">파란색</option>
+                <option value="white">하얀색</option>
+                <option value="yellow">노란색</option>
+            </select>
+            <h2>정기배송일</h2>
+            <select name="day" multiple>
+                <option value="monday">월요일</option>
+                <option value="tuesday">화요일</option>
+                <option value="wendsday">수요일</option>
+                <option value="thursday">목요일</option>
+                <option value="friday">금요일</option>
+                <option value="saturday">토요일</option>
+                <option value="sunday">일요일</option>
+            </select>
+            <input type="submit">
+        </form>
+    </body>
+</html>

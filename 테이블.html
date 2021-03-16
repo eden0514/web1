@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TABLE</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>TABLE(표 만들기)</h1>
+    table 태그는 HTML 문서에서 표를 만드는 태그입니다. 행과 열을 표현하기 위해 tr, td등의 태그와 함께 작성하게 됩니다.
+    <h2>TABLE 만들어보기</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>name</th><th>sex</th><th>ages</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>eden</td><td rowspan="2">fe</td><td>28</td>
+            </tr>
+            <tr>
+                <td>haydee</td><td>28</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">평균나이</td><td>28</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>table의 행과 열 병합</h2>
+    <ul>
+    li행(세로)은 병합하는 td에 rowspan="병합하는 행 수"를 넣고, 밑에 중복되는 행의 td를 삭제해주면된다.</li>
+    li열(가로)은 병합하는 td에 colspan="병합하는 행 수"를 넣고, 옆에 중복되는 행의 td를 삭제해주면된다.</li>    
+    </ul>    
+</body>
+</html>
