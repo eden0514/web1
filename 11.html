@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+  </header> 
+  <div id="grid">
+  <nav>
+  <ol>
+    <li><a href="11.html" title="HTML">HTML</a></li>
+    <li><a href="22.html" title="CSS">CSS</a></li>
+    <li><a href="33.html" title="Javascript">JavaScript</a></li>
+  </ol>
+  </nav>
+  <article>
+  <h2>HTML이란?</h2>
+<p>
+  Hypertext markup Language의 약자로 "링크"라는 특징을 가지고 마크업 형식으로 하는 컴퓨터 프로그래밍 언어(약속)이다.
+</p>
+<ul>
+    <li><p>이미지 넣기</p><img src="canada.jpg" width="500px" title="canada" alt="canada"></li>
+    <li><p> 테이블 표 만들기</p>
+        <p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>이름</th><th>학교</th><th>나이</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                     <td>김수경</td><td>왜 물어본대</td><td rowspan="2">28</td>
+                    </tr>
+                    <tr>
+                     <td>김효영</td><td>덕성여대</td>
+                    </tr>
+                    <tr>
+                     <td>eden</td><td>부산외대</td><td>23</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Things will all work out!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </p>
+    </li>
+    <li><p>FORM 태그</p>
+        <p>
+            <form action="http://localhost.login.php">
+                <p><label>아이디:<input type="text" name="ID"></label></p>
+                <p><label>비밀번호:<input type="password" name="PW"></label></p>
+                <p><label>TEXT AREA:<textarea cols="10" rows="2">적으시오</textarea></label></p>
+                <p><input type="submit" value="들어가기"></p>
+            </form>
+        </p>
+      </li>
+      <li><p>FORM_Dropdown list 만들기</p>
+        <p>
+           <form action="http://loclhost/color.php">
+          <h3>색상</h3>
+          <select name="color">
+            <option value="red">빨간맛</option>
+            <option value="black">까만맛</option>
+            <option value="yellow">노란맛</option>
+            <option value="purple">보라맛</option>
+          </select>
+          <h3>사이즈</h3>
+          <select name="size" multiple>
+            <option value="small">소자</option>
+            <option value="medium">중자</option>
+            <option value="large">대자</option>
+          </select>
+          <input type="submit" value="주문하기">
+          </form>
+        </p>
+    </li>
+    <li><p>FORM_radio, checkbox 만들기</p>
+      <p>
+      <form action="http://localhost/order.php">
+      <p>
+        <h3>사람 선택(단일 선택)</h3>
+        <label>수경:<input type="radio" name="person" value="수경"></label>
+        <label>효영:<input type="radio" name="person" value="효영"></label>
+        <label>혜수:<input type="radio" name="person" value="혜수" checked></label>
+        <label>정민:<input type="radio" name="person" value="정민"></label>
+      </p>
+      <p>
+        <h3>요일 선택(다중 선택)</h3>
+        <label>월요일<input type="checkbox" name="day" value="monday" checked></label>
+        <label>화요일<input type="checkbox" name="day" value="tuesday"></label>
+        <label>수요일<input type="checkbox" name="day" value="wednsday"></label>
+        <label>목요일<input type="checkbox" name="day" value="thursday"></label>
+        <label>금요일<input type="checkbox" name="day" value="friday"></label>
+        <label>토요일<input type="checkbox" name="day" value="saturday"></label>
+        <label>일요일<input type="checkbox" name="day" value="sunday"></label>
+      </p>
+      <p>
+        <input type="submit" value="데이트하기">
+      </p>
+      </form>
+    </p>
+    </li>
+    <li><p>FORM_파일 업로드 만들기</p>
+      <p>
+        <form action="http://localhost/upload.php" method="POST" enctype="multipart/form-data">
+          <input type="file" name=image>
+          <input type="submit">
+        </form>
+      </p>
+    </li>
+</ul>
+</article>
+</div>
+</body>
+</html>

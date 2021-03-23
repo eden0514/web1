@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+  </header> 
+  <div id="grid"> 
+  <nav>
+        <ol>
+            <li><a href="11.html">HTML</a></li>
+            <li><a href="22.html">CSS</a></li>
+            <li><a href="33.html">JavaScript</a></li>
+          </ol>
+      </nav>
+      <article>
+          <h2>CSS란?</h2>
+          <p>웹 문서의 전반적인 스타일을 미리 저장해 둔 스타일시트이다. 문서 전체의 일관성을 유지할 수 있고, 세세한 스타일 지정의 필요를 줄어들게 하였다.
+          기존의 HTML은 웹 문서를 다양하게 설계하고 수시로 변경하는데 많은 제약이 따르는데, 이를 보완하기 위해 만들어진 것이 스타일 시트이고 스타일 시트의 표준안이 바로 CSS이다. 간단히 스타일 시트라고도 한다.</p>
+          <p>HTML을 이용해서 웹 페이지를 제작할 경우 전반적인 틀에서 세세한 글꼴 하나 하나를 일일이 지정해주어야 하지만, 웹 페이지의 스타일(작성형식)을 미리 저장해 두면 웹 페이지의 한 가지 요소만 변경해도 관련되는 전체 페이지의 내용이 한꺼번에 변경되므로, 문서 전체의 일관성을 유지할 수 있고 작업 시간도 단축된다.
+          따라서 웹 개발자들은 보다 풍부한 디자인으로 웹을 설계할 수 있고, 글자의 크기, 글자체, 줄간격, 배경 색상, 배열위치 등을 자유롭게 선택하거나 변경할 수 있으며 유지·보수도 간편하게 할 수 있다.</p>
+          <ul>
+            <li class="list11">웹 페이지 안에 CSS 삽입하는 방법</li>
+            <ol id="part">
+              <li class="list">STYLE TAG 사용하기</li>
+              <p>STYLE태그 안에 효과를 누구에게 줄 것인가에 대한 선택자를 쓰고 중괄호 안에 선언을 넣어 css 사용 가능하다.<br>
+              <div id="example">
+                <div>EX)</div>
+                <div><strong>a</strong>(선택자)<strong>{</strong><br> <strong>color</strong>(속성/property)<strong>: red</strong>(속성의 값/value)<strong>;<br>}</strong></div>
+              </div>
+              <li class="list">STYLE 속성을 사용하기</li>
+              <p>HTML의 속성인 <strong>style="선언(효과):속성 값"</strong>을 원하는 곳의 태그 안에 삽입하면 웹 브라우저는 그것을 CSS문법에 따라 해석함.</p>    
+            </ol>
+            <li class="list11">CSS_박스 모델</li>
+            <p>block level element -> 화면 전체를 쓰는 태그 ex) h1, h2 ...</p>
+            <p>inline element -> 자신의 부피만큼 쓰는 태그 ex) a ...</p>
+            <div class="block">
+              <ol>
+              <li>block->inline element로 바꾸는 방법</li>
+              style TAG 안에 원하는 selector(선택자)에 display: inline;으로 속성값을 적어주면 된다. 
+              <li>inline-> block lever element로 바꾸는 방법</li>
+              style TAG 안에 원하는 selector(선택자)에 display: block;으로 속성값을 적어주면 된다.
+              <li>화면에서 사라지게 하는 방법</li>
+              style TAG 안에 원하는 selector(선택자)에 display: none;으로 속성값을 적어주면 된다.
+            </ol>
+          </div>
+          <p>[사용되는 용어 정리]</p>
+          <ul>
+            <li>width : 폭</li>
+            <li>height : 높이</li>
+            <li>content : 글이 들어가는 자리</li>
+            <li>padding : border과 content 사이의 간격</li>
+            <li>border : 테두리</li>
+            <li>margin : border과 border의 사이</li>
+          </ul>
+          <p>[아무런 의미는 없지만 디자인의 목적으로 사용되는 태그]</p>
+          <ul>
+            <li>div-block level element</li>
+            <li>span-inline element</li>
+          </ul>
+            <li class="list11">CSS_GRID</li>
+            <strong>두 개의 tag를 나란히 열을 맞추기 위해서는 우선 두 개의 tag를 감싸는 부모 태그가 필요하다. 이때, 디자인으로만 사용되는 태그인 "div"를 사용하여 태그를 묶어주고 태그에 "id"를 부여해준다. 
+            이후 [style] 태그에 id를 부여한 후 그 안에</strong>
+            <p>"display: grid;</p>
+            <p>grid-template-columns: (두가지 칼럼의 크기를 적어주면 된다.) ex) 100px 1fr -> 첫번째 열은 100px로 고정하고, 두번째 열은 화면의 크기에 따라 조절된다."</p>
+          <strong>적어주면 된다.</strong>
+
+            <li class="list11">CSS_MEDIA QUERY(미디어 쿼리)</li>
+            <p>MEDIA QUERY(미디어 쿼리)는 반응형 디자인, 즉 화면의 크기에 따라 웹 페이지의 요소들이 반응해서 동작 하는 것을 하기 위한 것이다.</p>
+            <p>style태그에 <strong>@media(min-width:800px) {</strong> (조건을 적어주기)</p>
+              <p><strong>선택자{</strong></p>
+                <p><strong>display: none;</strong></p>
+             <p><strong>}</strong></p>
+            <p><strong>}</strong></p>
+            => 조건에 해당할 경우 선택자 안에 쓴 속성(display:none;)이 실행된다.
+            <p class="media">min-width:800px => 화면의 폭이 800보다 클 때 속성이 실행된다.-> 최소한 화면의 폭이 800px이다.</p>
+            <p class="media">max-width:800px => 화면의 폭이 800보다 작을 때 속성이 실행된다.-> 최대한 화면의 폭이 800px이다.</p>
+          </ul>
+      </article>
+  </div>
+</body>
+</html>
