@@ -1,0 +1,57 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden scroll;
+}
+#grid{
+    background-color: navy;
+    color: oldlace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+span{
+    display: flex;
+    justify-content: space-around;
+    margin:50px;
+}
+h3{
+    margin:50px;
+}
+.dot{
+    margin-top:50px;
+    margin-bottom: 50p;
+}
+article{
+    background-color: peachpuff;
+}
+h3{
+    font-size: 30px;
+}
+article{
+    height: 100%;
+    width: 100%;
+}
+@media(max-width:900px){
+    #grid{
+        align-items: center;
+        flex-direction: column;
+    }
+    span{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    .dot{
+        flex-direction: row;
+    }
+    .point{
+        flex-direction: column;
+    }
+}
